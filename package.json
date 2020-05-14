@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot",
+  "version": "0.0.1",
+  "description": "A server that interfaces via an API with an electron application to act as a tool for Dungeon Masters utilizing Discord for communication and dice rolls.",
+  "repository": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Ramiro Rocha",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "discord-command-parser": "^1.4.3",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "log-symbols": "^4.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.8",
+    "sqlite3": "^4.2.0"
+  }
+}
