@@ -78,6 +78,6 @@ module.exports.help = {
   name: "startcontest",
   description: "This command starts a DC contest. Others join the contest using the command `..join [modifier]`, where modifier is added to the roll.",
   usage: "[dc]",
-  category: "dungeons-and-dragons",
+  category: "dnd",
   aliases: ["stcon"]
 };
