@@ -7,6 +7,12 @@
  const { parseRoll } = require('../../roll.js');
  const { parse } = require("discord-command-parser");
 
+ /**
+  * Executes the `startcontest` command
+  * @param [Client]  bot - The client
+  * @param [Message] msg - The message sent
+  * @param [string[]] args - the arguments for the command
+  */
 module.exports.run = async (bot, msg, args) => {
   console.log(`User ${msg.author.tag} used the startcontest command\n\t${msg.content}`)
 

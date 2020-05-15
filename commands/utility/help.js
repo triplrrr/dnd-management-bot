@@ -1,6 +1,12 @@
 const { MessageEmbed } = require("discord.js");
 const { readdirSync } = require("fs");
 
+/**
+ * Executes the `startcontest` command
+ * @param [Client]  bot - The client
+ * @param [Message] msg - The message sent
+ * @param [string[]] args - the arguments for the command
+ */
 module.exports.run = (bot, message, args) => {
   console.log(`User ${msg.author.tag} used the help command\n\t${msg.content}`)
 
