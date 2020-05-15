@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "A server that interfaces via an API with an electron application to act as a tool for Dungeon Masters utilizing Discord for communication and dice rolls.",
   "repository": "",
-  "main": "main.js",
+  "main": "app.js",
+  "nodemonConfig": {
+    "ignore": [".git/*", "node_modules/*", "README.md", ".gitignore"],
+    "delay": "2500"
+  },
   "scripts": {
-    "start": "node main.js"
+    "start": "nodemon app.js"
   },
   "author": "Ramiro Rocha",
   "license": "MIT",

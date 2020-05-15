@@ -28,7 +28,7 @@ module.exports.run = async (bot, msg, args) => {
     }
     let rolls = keeps.concat(drops);
     shuffle(rolls)
-    text = text + `:game_die: You rolled a(n) ${result.total} [${rolls.join(' + ')}]\n`;
+    text = text + `:game_die: You rolled a(n) ${result.total} [${rolls.join(' + ')}] :game_die:\n`;
   })
   reply.edit(text);
 
