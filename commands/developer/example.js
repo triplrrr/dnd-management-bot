@@ -5,7 +5,7 @@
  */
 
 module.exports.run = async (bot, msg, args) => {
-  console.log(`User ${msg.author.username}#${msg.author.tag} used the example command\n\t${msg.content}`)
+  console.log(`User ${msg.author.tag} used the help command\n\t${msg.content}`)
 
   msg.reply('This is an example! Hello, World!');
 
