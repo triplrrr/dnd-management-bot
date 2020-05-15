@@ -8,7 +8,7 @@ const { parseRoll } = require("../../roll.js");
 const { shuffle } = require('../../utility-functions.js')
 
 module.exports.run = async (bot, msg, args) => {
-  console.log(`User ${msg.author.tag} used the help command\n\t${msg.content}`)
+  console.log(`User ${msg.author.tag} used the roll command\n\t${msg.content}`)
 
   let reply = await msg.reply(":game_die: Rolling dice...");
   let text = `${msg.author}\n`;
