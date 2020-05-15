@@ -30,4 +30,4 @@ Should this bot not fufill a need, you can add a command fairly easily. You may 
 
 ## Credits
 
-- Credit to (Anish Shobith)[https://github.com/Anish-Shobith] for the command structure. 
+- Credit to [Anish Shobith](https://github.com/Anish-Shobith) for the command structure. 
