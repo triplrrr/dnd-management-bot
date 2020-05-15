@@ -13,7 +13,7 @@ In order to run this bot, you will need to create several files. First, you'll n
 module.exports = {
 	prefix: "!",
 	owners: ["your username and tag here"],
-  ownerID: "your discord id here",
+	ownerID: "your discord id here",
 	token: "your-token-here",
 };
 ```
