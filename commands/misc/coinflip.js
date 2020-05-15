@@ -5,6 +5,7 @@
  */
 
 module.exports.run = async (bot, msg, args) => {
+  console.log(`User ${msg.author.username}#${msg.author.tag} used the coinflip command\n\t${msg.content}`)
 
   if (Math.random() > 0.5) {
     msg.reply(`:a: It's heads!`)

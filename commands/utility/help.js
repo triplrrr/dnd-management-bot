@@ -2,6 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const { readdirSync } = require("fs");
 
 module.exports.run = (bot, message, args) => {
+  console.log(`User ${msg.author.username}#${msg.author.tag} used the help command\n\t${msg.content}`)
 
 	const embed = new MessageEmbed()
 		.setColor("#2C2F33")

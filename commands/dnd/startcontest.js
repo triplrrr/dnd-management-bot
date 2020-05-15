@@ -8,6 +8,7 @@
  const { parse } = require("discord-command-parser");
 
 module.exports.run = async (bot, msg, args) => {
+  console.log(`User ${msg.author.username}#${msg.author.tag} used the startcontest command\n\t${msg.content}`)
 
   let contestDC;
   if (args[0]) {
