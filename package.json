@@ -5,7 +5,13 @@
   "repository": "",
   "main": "app.js",
   "nodemonConfig": {
-    "ignore": [".git/*", "node_modules/*", "README.md", ".gitignore", "data.sqlite"],
+    "ignore": [
+      ".git/*",
+      "node_modules/*",
+      "README.md",
+      ".gitignore",
+      "data.sqlite"
+    ],
     "delay": "2500"
   },
   "scripts": {
