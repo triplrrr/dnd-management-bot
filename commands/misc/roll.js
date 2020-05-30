@@ -4,6 +4,10 @@
  * @licence MIT
  */
 
+Array.min = function(array) {
+  return Math.min.apply(Math, array);
+};
+
 const { parseRoll } = require("../../roll.js");
 const { shuffle } = require('../../utility-functions.js')
 
@@ -22,19 +26,21 @@ module.exports.run = async (bot, msg, args) => {
     let result;
     try {
       result = parseRoll(arg);
-    } catch {
+    } catch (err) {
       text = text + `:x: The string \`${arg}\` is not a valid dice roll!\n`;
+      console.log(err);
       return;
     }
-    let keeps = result.rolls.map( ( d ) => `***${d}***`);
+    let keeps = result.rolls.map((d) => `***${d}***`);
     let drops;
     try {
-      drops = result.drops.map( ( d ) => `~~*${d}*~~`);
+      drops = result.dropped.map((d) => `~~*${d}*~~`);
     } catch (err) {
       drops = [];
     }
-    let rolls = keeps.concat(drops);
-    shuffle(rolls)
+    let rolls = keeps.concat(drops).sort(function() {
+      return 0.5 - Math.random();
+    });
     text = text + `:game_die: You rolled a(n) ${result.total} [${rolls.join(' + ')}] :game_die:\n`;
   })
   reply.edit(text);

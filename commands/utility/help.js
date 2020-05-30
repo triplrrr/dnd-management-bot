@@ -8,7 +8,7 @@ const { readdirSync } = require("fs");
  * @param [string[]] args - the arguments for the command
  */
 module.exports.run = (bot, message, args) => {
-  console.log(`User ${msg.author.tag} used the help command\n\t${msg.content}`)
+  console.log(`User ${message.author.tag} used the help command\n\t${message.content}`)
 
 	const embed = new MessageEmbed()
 		.setColor("#2C2F33")

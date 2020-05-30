@@ -8,20 +8,19 @@ exports.parseRoll = (cmd) => {
   let pattern = /([0-9]*)?d([0-9]+)(d[0-9]*)?/;
   let match = pattern.exec(cmd);
 
-  //console.log(match);
+  console.log(match);
 
   if ( match === undefined ) {
-    throw TypeError( "input is not a valid dice roll string" )
+    throw TypeError( "input is not a valid dice roll string" );
   }
 
   let sides = parseInt( match[2] );
 
   let count;
-  try {
-    count = parseInt( match[1] );
-  } catch ( err ) {
-    count = 1
-  }
+  if (match[1])
+    count = parseInt(match[1]);
+  else
+    count = 1;
 
   let rolls = Array(  count )
     .fill()
