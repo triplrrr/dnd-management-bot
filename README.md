@@ -26,7 +26,7 @@ Before running it, be sure to run the `npm install` command so that no dependenc
 
 ## Adding commands
 
-Should this bot not fufill a need, you can add a command fairly easily. You may notice a folder called `commands` in the repo. This contains all the commands for the bot. Each command is sorted into a folder that is named based on the category. The `commands/deveoper/example.js` file is a template for all the commands. Note that for the command to show up in the help dialogue, the category field in the help variable must match the name of the folder it is in.
+Should this bot not fulfill a need, you can add a command fairly easily. You may notice a folder called `commands` in the repo. This contains all the commands for the bot. Each command is sorted into a folder that is named based on the category. The `commands/developer/example.js` file is a template for all the commands. Note that for the command to show up in the help dialogue, the category field in the help variable must match the name of the folder it is in.
 
 ## Credits
 
